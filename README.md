@@ -55,8 +55,18 @@ medcontrol/
 │
 └── frontend/
     └── Angular
-
+# Imagens do sistema
 # Login
 ![Login](docs/screenshots/login.jpg)
+
+# Painel de pacientes
+![Detalhes](docs/screenshots/painelpacientes.jpg)
+
+# Detalhes do paciente
+![Anotacoes](docs/screenshots/anotacoesdesktop.jpg)
+![Anotacoes](docs/screenshots/anotacoesmobile.jpg)
+![Anotacoes](docs/screenshots/anotacoesnotebook.jpg)
+
+
     
 
