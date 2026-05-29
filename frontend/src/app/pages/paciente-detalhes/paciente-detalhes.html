@@ -1,0 +1,32 @@
+<div class="detalhes-container">
+
+  <h1>Detalhes do paciente</h1>
+
+  <div class="paciente-card" *ngIf="paciente">
+    <h2>{{ paciente.nome }}</h2>
+    <p>Médico: <strong>{{ paciente.nomeMedico }}</strong></p>
+  </div>
+
+  <section class="observacoes-section">
+    <h2>Observações</h2>
+
+    <div class="nova-observacao">
+      <textarea
+        [(ngModel)]="descricao"
+        placeholder="Digite uma observação">
+      </textarea>
+
+      <button (click)="criarObservacao()">
+        Salvar observação
+      </button>
+    </div>
+
+    <div class="lista-observacoes">
+      <div class="observacao-card" *ngFor="let obs of observacoes">
+        <p>{{ obs.descricao }}</p>
+        <small>Horário: {{ obs.criadoAt }}</small>
+      </div>
+    </div>
+  </section>
+
+</div>

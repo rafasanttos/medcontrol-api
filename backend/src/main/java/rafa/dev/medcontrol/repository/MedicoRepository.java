@@ -1,0 +1,13 @@
+package rafa.dev.medcontrol.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import rafa.dev.medcontrol.model.Medico;
+
+import java.util.Optional;
+import java.util.UUID;
+
+@Repository
+public interface MedicoRepository extends JpaRepository<Medico, UUID> {
+    Optional<Medico> findByEmail(String email);
+}

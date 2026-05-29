@@ -1,0 +1,41 @@
+<div class="login-page">
+  <form class="login-container" [formGroup]="formularioLogin" (ngSubmit)="login()">
+
+    <h1>Clínica</h1>
+    <p class="subtitle">Acesse sua conta</p>
+
+    <div class="input-group">
+      <input
+        type="email"
+        placeholder="Email"
+        formControlName="email">
+
+      <small *ngIf="formularioLogin.controls.email.invalid && formularioLogin.controls.email.touched">
+        Email inválido
+      </small>
+    </div>
+
+    <div class="input-group">
+      <input
+        type="password"
+        placeholder="Senha"
+        formControlName="password">
+
+      <small *ngIf="formularioLogin.controls.password.invalid && formularioLogin.controls.password.touched">
+        Senha é obrigatória
+      </small>
+    </div>
+
+    <button [disabled]="formularioLogin.invalid" type="submit">
+      Entrar
+    </button>
+
+    <p class="criar-conta">
+      Não tem uma conta?
+      <a href="criarConta">Criar conta</a>
+    </p>
+
+  </form>
+</div>
+
+

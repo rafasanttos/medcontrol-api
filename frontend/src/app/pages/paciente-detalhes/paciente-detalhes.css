@@ -1,0 +1,107 @@
+.detalhes-container {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f4f6f8;
+}
+
+.detalhes-container h1 {
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+.paciente-card {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.paciente-card h2 {
+  margin: 0 0 10px;
+  color: #2563eb;
+}
+
+.paciente-card p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.observacoes-section {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.observacoes-section h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.nova-observacao {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.nova-observacao textarea {
+  flex: 1;
+  min-height: 90px;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  resize: vertical;
+  font-size: 15px;
+}
+
+.nova-observacao button {
+  align-self: flex-start;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nova-observacao button:hover {
+  background: #1d4ed8;
+}
+
+.lista-observacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.observacao-card {
+  background: #f9fafb;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 4px solid #2563eb;
+}
+
+.observacao-card p {
+  margin: 0 0 10px;
+  color: #111827;
+}
+
+.observacao-card small {
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .detalhes-container {
+    padding: 20px;
+  }
+
+  .nova-observacao {
+    flex-direction: column;
+  }
+
+  .nova-observacao button {
+    width: 100%;
+  }
+}

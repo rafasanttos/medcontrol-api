@@ -1,0 +1,57 @@
+<div class="container">
+
+  <nav class="navbar">
+
+    <h1>Painel de pacientes</h1>
+
+    <button (click)="logout()">
+      Logout
+    </button>
+
+  </nav>
+
+  <div class="header">
+
+
+    <div class="form">
+      <input
+        type="text"
+        placeholder="Nome do paciente"
+        [(ngModel)]="nomePaciente"
+      >
+
+        <button (click)="criarPaciente()">
+          Adicionar paciente
+        </button>
+    </div>
+
+  </div>
+
+  <div class="cards">
+
+    @for (paciente of pacientes; track paciente.id) {
+
+      <div class="card">
+        @if(editandoId === paciente.id) {
+          <input [(ngModel)]="nomeEditado">
+          <button (click)="salvarEdicao()">Salvar</button>
+          <button (click)="cancelarEdicao()">Cancelar</button>
+        } @else {
+
+          <h3>{{ paciente.nome }}</h3>
+          <p>Médico: {{ paciente.nomeMedico }}</p>
+          <div class="actions">
+            <button (click)="verPaciente(paciente.id)">Ver</button>
+            <button (click)="prepararEdicao(paciente)">Editar</button>
+            <button (click)="deletarPaciente(paciente.id)">Excluir</button>
+          </div>
+        }
+      </div>
+
+    }
+
+  </div>
+
+</div>
+
+

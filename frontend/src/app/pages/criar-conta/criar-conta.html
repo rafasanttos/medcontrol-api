@@ -1,0 +1,9 @@
+<p>Vamos criar sua conta</p>
+<form [formGroup]="formulario" (ngSubmit)="criar()">
+
+  <input type="text" placeholder="nome" formControlName="nome">
+  <input type="email" placeholder="email" formControlName="email">
+  <input type="password" placeholder="password" formControlName="password">
+
+  <button type="submit" [disabled]="formulario.invalid" >Criar conta</button>
+</form>
