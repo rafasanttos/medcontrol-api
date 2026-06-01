@@ -124,6 +124,15 @@ Medico
 #### GET    /pacientes/{pacienteId}/observacoes
 #### POST   /pacientes/{pacienteId}/observacoes
 
+# Melhorias Futuras
+#### Dashboard com indicadores
+#### Pesquisa de pacientes
+#### Upload de documentos
+#### Agendamento de consultas
+#### Testes automatizados
+#### Docker
+#### Deploy em produção
+
 
 # Imagens do sistema
 # Login
