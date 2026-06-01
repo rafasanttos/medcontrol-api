@@ -55,6 +55,15 @@ medcontrol/
 │
 └── frontend/
     └── Angular
+
+# Fluxo de Autenticação
+#### Médico realiza login.
+#### Backend gera um token JWT.
+#### Frontend armazena o token.
+#### Interceptor envia o token automaticamente em cada requisição.
+#### Backend identifica o médico autenticado.
+#### Apenas pacientes pertencentes ao médico logado podem ser acessados. 
+
 # Imagens do sistema
 # Login
 ![Login](docs/screenshots/login.jpg)
