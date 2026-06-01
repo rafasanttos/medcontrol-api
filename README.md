@@ -64,6 +64,51 @@ medcontrol/
 #### Backend identifica o médico autenticado.
 #### Apenas pacientes pertencentes ao médico logado podem ser acessados. 
 
+# Banco de Dados
+
+### Relacionamentos:
+
+Medico
+ └── Pacientes
+      └── Observacoes
+
+# Executando o Backend
+
+#### Clone o projeto:
+
+#### git clone URL_DO_REPOSITORIO
+
+#### Acesse a pasta:
+
+#### cd backend
+
+#### Configure o PostgreSQL em:
+
+#### application.properties
+
+#### Execute:
+
+#### ./mvnw spring-boot:run
+
+
+# Executando o Frontend
+
+#### Acesse a pasta:
+
+#### cd frontend
+
+#### Instale as dependências:
+
+#### npm install
+
+#### Execute:
+
+#### ng serve
+
+#### A aplicação estará disponível em:
+
+#### http://localhost:4200      
+
 # Imagens do sistema
 # Login
 ![Login](docs/screenshots/login.jpg)
