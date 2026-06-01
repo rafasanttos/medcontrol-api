@@ -107,7 +107,23 @@ Medico
 
 #### A aplicação estará disponível em:
 
-#### http://localhost:4200      
+#### http://localhost:4200 
+
+# Principais Endpoints
+## Autenticação
+#### POST /auth/login
+### Médicos
+#### POST /medicos
+### Pacientes
+#### GET    /pacientes/me
+#### GET    /pacientes/{id}
+#### POST   /pacientes
+#### PUT    /pacientes/{id}
+#### DELETE /pacientes/{id}
+### Observações
+#### GET    /pacientes/{pacienteId}/observacoes
+#### POST   /pacientes/{pacienteId}/observacoes
+#### DELETE /observacoes/{id}
 
 # Imagens do sistema
 # Login
