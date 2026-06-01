@@ -123,7 +123,7 @@ Medico
 ### Observações
 #### GET    /pacientes/{pacienteId}/observacoes
 #### POST   /pacientes/{pacienteId}/observacoes
-#### DELETE /observacoes/{id}
+
 
 # Imagens do sistema
 # Login
