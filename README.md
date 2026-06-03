@@ -56,7 +56,96 @@ medcontrol/
 └── frontend/
     └── Angular
 
+# Fluxo de Autenticação
+#### Médico realiza login.
+#### Backend gera um token JWT.
+#### Frontend armazena o token.
+#### Interceptor envia o token automaticamente em cada requisição.
+#### Backend identifica o médico autenticado.
+#### Apenas pacientes pertencentes ao médico logado podem ser acessados. 
+
+# Banco de Dados
+
+### Relacionamentos:
+
+Medico
+ └── Pacientes
+      └── Observacoes
+
+# Executando o Backend
+
+#### Clone o projeto:
+
+#### git clone URL_DO_REPOSITORIO
+
+#### Acesse a pasta:
+
+#### cd backend
+
+#### Configure o PostgreSQL em:
+
+#### application.properties
+
+#### Execute:
+
+#### ./mvnw spring-boot:run
+
+
+# Executando o Frontend
+
+#### Acesse a pasta:
+
+#### cd frontend
+
+#### Instale as dependências:
+
+#### npm install
+
+#### Execute:
+
+#### ng serve
+
+#### A aplicação estará disponível em:
+
+#### http://localhost:4200 
+
+# Principais Endpoints
+## Autenticação
+#### POST /auth/login
+### Médicos
+#### POST /medicos
+### Pacientes
+#### GET    /pacientes/me
+#### GET    /pacientes/{id}
+#### POST   /pacientes
+#### PUT    /pacientes/{id}
+#### DELETE /pacientes/{id}
+### Observações
+#### GET    /pacientes/{pacienteId}/observacoes
+#### POST   /pacientes/{pacienteId}/observacoes
+
+# Melhorias Futuras
+#### Dashboard com indicadores
+#### Pesquisa de pacientes
+#### Upload de documentos
+#### Agendamento de consultas
+#### Testes automatizados
+#### Docker
+#### Deploy em produção
+
+
+# Imagens do sistema
 # Login
 ![Login](docs/screenshots/login.jpg)
+
+# Painel de pacientes
+![Detalhes](docs/screenshots/painelpacientes.jpg)
+
+# Detalhes do paciente
+![Anotacoes](docs/screenshots/anotacoesdesktop.jpg)
+![Anotacoes](docs/screenshots/anotacoesmobile.jpg)
+![Anotacoes](docs/screenshots/anotacoesnotebook.jpg)
+
+
     
 

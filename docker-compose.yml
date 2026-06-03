@@ -1,0 +1,37 @@
+services:
+
+  postgres:
+    image: postgres:16
+    container_name: medcontrol-db
+
+    environment:
+      POSTGRES_DB: medcontrol
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345678
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./backend
+
+    container_name: medcontrol-api
+
+    ports:
+      - "8080:8080"
+
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/medcontrol
+      DB_USERNAME: postgres
+      DB_PASSWORD: 12345678
+      MEDCONTROL_SECRET: minha-chave-super-secreta
+
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
