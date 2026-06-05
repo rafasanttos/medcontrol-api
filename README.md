@@ -3,6 +3,13 @@ Sistema Fullstack para gerenciamento de pacientes e observações médicas desen
 
 O projeto permite que médicos realizem autenticação segura, gerenciem seus próprios pacientes e registrem observações clínicas, garantindo que cada profissional tenha acesso apenas aos seus próprios dados.
 
+## Aplicação Online
+### Frontend
+https://medcontrol-api.vercel.app
+
+### Backend
+https://medcontrol-api-up93.onrender.com
+
 # Funcionalidades
 ##### Autenticação
 ##### Cadastro de médicos
@@ -112,15 +119,15 @@ Medico
 # Principais Endpoints
 ## Autenticação
 #### POST /auth/login
-### Médicos
+## Médicos
 #### POST /medicos
-### Pacientes
+## Pacientes
 #### GET    /pacientes/me
 #### GET    /pacientes/{id}
 #### POST   /pacientes
 #### PUT    /pacientes/{id}
 #### DELETE /pacientes/{id}
-### Observações
+## Observações
 #### GET    /pacientes/{pacienteId}/observacoes
 #### POST   /pacientes/{pacienteId}/observacoes
 
@@ -146,6 +153,29 @@ Medico
 ![Anotacoes](docs/screenshots/anotacoesmobile.jpg)
 ![Anotacoes](docs/screenshots/anotacoesnotebook.jpg)
 
+## 📚 Aprendizados
 
+Durante o desenvolvimento deste projeto foram praticados:
+
+- Arquitetura em camadas
+- DTOs e Mappers
+- Relacionamentos JPA
+- Autenticação JWT
+- Spring Security
+- Angular Standalone Components
+- Guards e Interceptors
+- Consumo de APIs REST
+- Dockerização de aplicações
+- Configuração de variáveis de ambiente
+- Deploy de aplicações Fullstack
+- Integração com PostgreSQL em nuvem
+
+# Autor
+
+Rafael Dos Santos
+
+Desenvolvedor Fullstack Java | Angular
+
+Santarém - PA
     
 
