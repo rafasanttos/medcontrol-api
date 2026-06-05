@@ -170,6 +170,12 @@ Durante o desenvolvimento deste projeto foram praticados:
 - Deploy de aplicações Fullstack
 - Integração com PostgreSQL em nuvem
 
+# Autor
 
+Rafael Dos Santos
+
+Desenvolvedor Fullstack Java | Angular
+
+Santarém - PA
     
 
