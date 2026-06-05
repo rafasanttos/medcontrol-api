@@ -153,6 +153,23 @@ Medico
 ![Anotacoes](docs/screenshots/anotacoesmobile.jpg)
 ![Anotacoes](docs/screenshots/anotacoesnotebook.jpg)
 
+## 📚 Aprendizados
+
+Durante o desenvolvimento deste projeto foram praticados:
+
+- Arquitetura em camadas
+- DTOs e Mappers
+- Relacionamentos JPA
+- Autenticação JWT
+- Spring Security
+- Angular Standalone Components
+- Guards e Interceptors
+- Consumo de APIs REST
+- Dockerização de aplicações
+- Configuração de variáveis de ambiente
+- Deploy de aplicações Fullstack
+- Integração com PostgreSQL em nuvem
+
 
     
 
