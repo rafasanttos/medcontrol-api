@@ -119,15 +119,15 @@ Medico
 # Principais Endpoints
 ## Autenticação
 #### POST /auth/login
-### Médicos
+## Médicos
 #### POST /medicos
-### Pacientes
+## Pacientes
 #### GET    /pacientes/me
 #### GET    /pacientes/{id}
 #### POST   /pacientes
 #### PUT    /pacientes/{id}
 #### DELETE /pacientes/{id}
-### Observações
+## Observações
 #### GET    /pacientes/{pacienteId}/observacoes
 #### POST   /pacientes/{pacienteId}/observacoes
 
