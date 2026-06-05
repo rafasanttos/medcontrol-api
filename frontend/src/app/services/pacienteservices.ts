@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class Pacienteservices {
-  private api = 'http://localhost:8080/pacientes';
+  private api = 'https://medcontrol-api-up93.onrender.com/pacientes';
 
   constructor(private http : HttpClient){}
 

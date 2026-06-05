@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class Auth {
-  private api = 'http://localhost:8080/auth';
+  private api = 'https://medcontrol-api-up93.onrender.com/auth';
 
   constructor(private http: HttpClient){}
 

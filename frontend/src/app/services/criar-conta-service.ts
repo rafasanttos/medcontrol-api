@@ -14,7 +14,7 @@ export class CriarContaService {
 
   constructor(private readonly http: HttpClient){}
 
-  private api = 'http://localhost:8080';
+  private api = 'https://medcontrol-api-up93.onrender.com';
 
 
   criarMedico(medico: Medico){
