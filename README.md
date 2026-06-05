@@ -3,6 +3,13 @@ Sistema Fullstack para gerenciamento de pacientes e observações médicas desen
 
 O projeto permite que médicos realizem autenticação segura, gerenciem seus próprios pacientes e registrem observações clínicas, garantindo que cada profissional tenha acesso apenas aos seus próprios dados.
 
+## Aplicação Online
+### Frontend
+https://medcontrol-api.vercel.app
+
+### Backend
+https://medcontrol-api-up93.onrender.com
+
 # Funcionalidades
 ##### Autenticação
 ##### Cadastro de médicos
