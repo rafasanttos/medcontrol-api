@@ -40,14 +40,11 @@ public class ObservacaoService {
             throw new RuntimeException("Acesso negado");
         }
 
-        LocalDateTime agora = LocalDateTime.now();
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
-        String dataHoraFormatada = agora.format(formato);
 
         Observacao observacao = new Observacao();
         observacao.setDescricao(dto.descricao());
-        observacao.setCriadoAt(dataHoraFormatada);
+        observacao.setCriadoAt(LocalDateTime.now());
         observacao.setPaciente(idPaciente);
 
         Observacao salva = observacaoRepository.save(observacao);
@@ -57,6 +54,7 @@ public class ObservacaoService {
                 salva.getDescricao(),
                 salva.getPaciente().getNome(),
                 salva.getCriadoAt()
+
         );
     }
 

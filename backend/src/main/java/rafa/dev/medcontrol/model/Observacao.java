@@ -14,7 +14,7 @@ public class Observacao {
     private UUID id;
 
     private String descricao;
-    private String criadoAt = LocalDateTime.now().toString();
+    private LocalDateTime criadoAt;
 
     @ManyToOne
     @JoinColumn(name = "paciente_id")
@@ -29,11 +29,11 @@ public class Observacao {
     public Observacao() {
     }
 
-    public String getCriadoAt() {
+    public LocalDateTime getCriadoAt() {
         return criadoAt;
     }
 
-    public void setCriadoAt(String criadoAt) {
+    public void setCriadoAt(LocalDateTime criadoAt) {
         this.criadoAt = criadoAt;
     }
 

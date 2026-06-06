@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fbbedad-8be9-4826-b4d4-794bff336ca9" name="Changes" comment="" />
+    <list default="true" id="4fbbedad-8be9-4826-b4d4-794bff336ca9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/rafa/dev/medcontrol/dto/ObservacaoResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/rafa/dev/medcontrol/dto/ObservacaoResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/rafa/dev/medcontrol/model/Observacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/rafa/dev/medcontrol/model/Observacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/rafa/dev/medcontrol/service/ObservacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/rafa/dev/medcontrol/service/ObservacaoService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
