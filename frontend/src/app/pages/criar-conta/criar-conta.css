@@ -86,8 +86,10 @@ button:disabled {
   text-decoration: none;
   color: #3f51b5;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .login-link a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
