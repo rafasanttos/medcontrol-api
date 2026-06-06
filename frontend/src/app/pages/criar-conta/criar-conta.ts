@@ -24,8 +24,8 @@ export class CriarConta {
     const dados = this.formulario.getRawValue();
 
     if(this.formulario.invalid){
-      alert("seu formulario esta invalIDO")
-      return;
+      alert("seu formulario esta inválido")
+       return;
     }
 
     this.criarContaService.criarMedico(dados).subscribe({
@@ -37,6 +37,7 @@ export class CriarConta {
       error:(err)=>{
         alert("erro ao criar")
         console.log(err)
+        alert(JSON.stringify(err))
       }
     })
 
