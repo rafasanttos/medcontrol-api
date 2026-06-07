@@ -40,7 +40,7 @@ export class CriarConta {
       if(err.status === 0){
          alert('Não foi possível conectar com o servidor. Aguarde alguns segundos e tente novamente.');
       }
-        alert("Erro ao criar médico")
+        alert(JSON.stringify(err))
       }
     })
 

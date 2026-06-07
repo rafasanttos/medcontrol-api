@@ -11,6 +11,7 @@ import rafa.dev.medcontrol.repository.ObservacaoRepository;
 import rafa.dev.medcontrol.repository.PacienteRepository;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.UUID;
@@ -40,11 +41,11 @@ public class ObservacaoService {
             throw new RuntimeException("Acesso negado");
         }
 
-
+        LocalDateTime agora = LocalDateTime.now(ZoneId.of("America/Sao Paulo"));
 
         Observacao observacao = new Observacao();
         observacao.setDescricao(dto.descricao());
-        observacao.setCriadoAt(LocalDateTime.now());
+        observacao.setCriadoAt(agora);
         observacao.setPaciente(idPaciente);
 
         Observacao salva = observacaoRepository.save(observacao);
