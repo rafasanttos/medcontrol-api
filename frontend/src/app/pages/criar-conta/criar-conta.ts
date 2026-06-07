@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CriarContaService } from '../../services/criar-conta-service';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-criar-conta',
-  imports: [ReactiveFormsModule, FormsModule],
+  imports: [ReactiveFormsModule, FormsModule, CommonModule],
   templateUrl: './criar-conta.html',
   styleUrl: './criar-conta.css',
 })
@@ -19,6 +20,7 @@ export class CriarConta {
 
   constructor(private readonly criarContaService: CriarContaService, private readonly router: Router){}
 
+  carregando = false;
 
   criar(){
     const dados = this.formulario.getRawValue();
@@ -27,6 +29,8 @@ export class CriarConta {
       alert("seu formulario esta inválido")
        return;
     }
+
+    this.carregando = true;
 
     this.criarContaService.criarMedico(dados).subscribe({
       next:()=>{

@@ -19,9 +19,12 @@
 
   <button
     type="submit"
-    [disabled]="formulario.invalid">
-    Criar conta
+    [disabled]="formulario.invalid || carregando ">
+    {{carregando?'Criando seu cadastro...':'Criar conta'}}
   </button>
+  <p class="loading" *ngIf="carregando">
+    Criando seu cadastro, aguarde...
+  </p>
 
   <div class="login-link">
     Já possui conta?

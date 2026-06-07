@@ -93,3 +93,9 @@ button:disabled {
   text-decoration: underline;
   cursor: pointer;
 }
+.loading {
+  text-align: center;
+  color: #3f51b5;
+  font-size: 14px;
+  margin-top: 10px;
+}
