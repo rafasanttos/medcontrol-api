@@ -41,7 +41,7 @@ public class ObservacaoService {
             throw new RuntimeException("Acesso negado");
         }
 
-        LocalDateTime agora = LocalDateTime.now(ZoneId.of("America/Sao Paulo"));
+        LocalDateTime agora = LocalDateTime.now(ZoneId.of("America/Belem"));
 
         Observacao observacao = new Observacao();
         observacao.setDescricao(dto.descricao());
