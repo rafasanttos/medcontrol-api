@@ -35,9 +35,12 @@ export class CriarConta {
 
       },
       error:(err)=>{
-        alert("erro ao criar")
-        console.log(err)
-        alert(JSON.stringify(err))
+      console.log(err)
+
+      if(err.status === 0){
+         alert('Não foi possível conectar com o servidor. Aguarde alguns segundos e tente novamente.');
+      }
+        alert("Erro ao criar médico")
       }
     })
 
