@@ -24,7 +24,7 @@
     <div class="lista-observacoes">
       <div class="observacao-card" *ngFor="let obs of observacoes">
         <p>{{ obs.descricao }}</p>
-        <small>Horário: {{ obs.criadoAt | date:'dd/MM/yyyy HH:mm:ss' }}</small>
+        <small>Horário: {{ obs.criadoAt | date:'dd/MM/yyyy HH:mm:ss':'America/Belem' }}</small>
       </div>
     </div>
   </section>
